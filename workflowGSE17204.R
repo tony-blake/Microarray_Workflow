@@ -506,7 +506,12 @@ c3 <- c(c1,rev(c2));  # rev reverses the list
 ######################################## Correlation Analysis ###################################
  
 # Here the degree of correlation between different gene ontologies is analysed based on the 
-# the differentailly expressed genes that they have in common
+# the differentailly expressed genes that they have in common.
+
+# The following pieces of code take the objects created from the GOstats analysis as input. It then creates a matrix of 
+# correlation values for gene ontologies and uses it to create a correlogram showing the percenatge of genes shared 
+# between gene ontologies in the form a clustered heatmap. It also creates a table of gene ontologies showing the over
+# represented genes in each ontology. Rows are ordered according to the clustering heatmap of correlation values. 
  
  
  
@@ -657,3 +662,4 @@ clustered <- mfl4square[[2]][match(clst, mfl4square[[2]]$pathways),]
 my.df <- data.frame(lapply(clustered, as.character), stringsAsFactors=FALSE)
 write.xlsx(my.df, file="lMF_genesinpathways_GSE17204_antisense_DJI_Bvs_control_h.xlsx")
 
+############################################# End #############################################################################
