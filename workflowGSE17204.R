@@ -503,13 +503,18 @@ c3 <- c(c1,rev(c2));  # rev reverses the list
 #rm(c1,c2)
 
 
-######################################## Pathway Analysis ###################################
-
+######################################## Correlation Analysis ###################################
+ 
+# Here the degree of correlation between different gene ontologies is analysed based on the 
+# the differentailly expressed genes that they have in common
+ 
+ 
+ 
 #upregulated pathways
 
 #bph4
 
-bph4square <- makebeta4_pathwaygenetable(bph4GO)
+bph4square <- makebeta4_pathwaygenetable(bph4GO) 
 hr <- hclust(cor.dist(bph4square[[1]]))
 hc <- hclust(cor.dist(bph4square[[1]]))
 pdf(file='hBP_correlmap_GSE17204_antisense_DJI_Bvs_control_h.pdf', height=13, width=13)
