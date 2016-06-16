@@ -4,10 +4,11 @@
 
 # Description: This  Work Flow analyses microarray data (Human, Mouse and Rat)
 # for Gene Expression in Parkinson Disease Cases and considers genes of interest that 
-# relate treatment of Parkinsons
+# related to the treatment of Parkinsons
 
 # Genes of interest: 
 # For confidentiality purposes I have chosen to use some randomly generated data as the genes of interest in lieu of the actual genes of interest
+
 # Workflow -> Microarray data normilisation, generation of differentially expressed genes, 
 # selection of expression data for g.o.i,  prodcution of heatmap, GSEA Pathway Analysis using and GO
 
