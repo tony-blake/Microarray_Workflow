@@ -19,10 +19,7 @@ In this repository there are 5 files that comprise a workflow for analysing the 
  4.  "source_dl.R" - function called in "workflowGSE17204.R" that can download and run other functions from a different users
                       Github account 
                       
- 5.  "parkinson_goi.txt" - This text file contains a list of genes that are of interest in 
-                            determing whether they are differentially expressed across the different experimental conditions
-
- 6.  "phenodata.txt" - meta data file. This needs to placed in the same directory as the .CEL files once they have been downlaoded.
+5.  "phenodata.txt" - meta data file. This needs to placed in the same directory as the .CEL files once they have been downlaoded.
                              
 It should be noted also that the main file "workflowGSE17204.R" needs to be run in sections, each section being a code block.
 The reason for doing so is primarily to catch bugs but also because the metadata text file for the LIMMA  needs to be created 
